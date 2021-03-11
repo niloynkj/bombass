@@ -4,7 +4,7 @@ var str = (window.location != window.parent.location)
             ? document.referrer
             : document.location.href;
 			
-   var stt = str.replace("https://topexpertbd.blogspot.com/2021/02/le-halua-le-full-movie.htm?", "");
+   var stt = str.replace("https://topexpertbd.blogspot.com/2021/02/le-halua-le-full-movie.html?", "");
 
 	
 
