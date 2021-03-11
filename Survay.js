@@ -16,6 +16,8 @@ localStorage.setItem('key1', t1);
 var data = localStorage.getItem('key1');
 document.getElementById("link").innerText= (data);
 
-alert("hh");
+
+     location.replace("https://topexpertbd.blogspot.com/2021/01/master-movie-full-movie-download-hd.html")
+            
 };
 
