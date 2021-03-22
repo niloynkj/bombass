@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	
+ </head>
+  <body>
+
+  <h6
+	id="old" style='display:none'>bb</h6>
+	<table border="0%" style="width: 100%;"><tbody><tr><td>
+	
+			<input style="font-size:45px; padding: 15px; margin: 15px " id="tag" value="" placeholder="Enter tag... " /></td></tr><tr><td>
+				<input style="font-size:45px; padding: 15px; margin: 15px " id="link" value="" placeholder="Enter link... "/>
+			  </td></tr>
+	<tr><td>
+		<button style="font-size: 55px; background: blue; color: white; padding: 15px; margin: 15px  " id="btn" onclick="btn()">🖇Make Survy Link</button>
+	  </td> </tr><tr><td><tr><td>
+	  
+	  <input style="font-size:45px; padding: 15px; margin: 15px " id="result" value="" placeholder="Result here.... " /></td></tr><tr><td>
+		
+		</td></tr></tbody></table>
+  
+		
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+	
+	<script>
+var config = {
+    apiKey: "AIzaSyAmjt4yAPt2PlScByaZXGFBNQZ2nYoL3HQ",
+  authDomain: "weblogin-13a48.firebaseapp.com",
+  databaseURL: "https://weblogin-13a48.firebaseio.com",
+  projectId: "weblogin-13a48",
+  storageBucket: "weblogin-13a48.appspot.com",
+  messagingSenderId: "653973990255",
+  appId: "1:653973990255:web:494c0bc958f2ba3c52569a",
+  measurementId: "G-QLT3J601KJ"};
+firebase.initializeApp(config);
+
+var link = "90";
+
+var ST = firebase.database().ref("Post").child(link);
+            ST.on('value', function(snapshot) {
+            var Y = (snapshot.val());
+            document.getElementById("old").innerHTML = (Y);});
+
+
+
+
+
+
+function btn(){
+	var push = document.getElementById("tag").value;
+	var link = document.getElementById("link").value;
+	firebase.database().ref("Movie").update({
+              [push] : link,
+           
+            });
+		var result = "https://topexpertbd.blogspot.com/p/topexpertbd-theatre.html?"+(push);
+			
+	document.getElementById("result").value = (result);
+			
+alert("Link Make Successful✅");
+};
+
+
+</script>
+  </body>
+</html>		
