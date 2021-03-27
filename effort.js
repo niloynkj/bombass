@@ -20,19 +20,6 @@ var ST = firebase.database().ref(tt).child("Point");
 
 
 function clear(){
-	var gg = "Topexpertbd/page/123-108-246-124";
-	
-	firebase.database().ref(gg).remove();
-	
-	var user = "User/123-108-246-124";
-	
-	var point = document.getElementById("point").innerHTML;
-	var pointon = +point+1;
-	
-	firebase.database().ref(user).update({
-              Point : pointon,
-           
-            });
 	
 	alert("ok");
 	
