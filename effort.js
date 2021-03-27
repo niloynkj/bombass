@@ -10,7 +10,7 @@ var config = {
 };
 
 firebase.initializeApp(config);
-Ps = document.getElementById("ps").innerHTML;
+Ps = document.getElementById("ps").value;
 var Psf = Uip.replace(/\./g, "-");
 var tt = "User/"+(Psf);
 var ST = firebase.database().ref(tt).child("Point");
@@ -22,7 +22,7 @@ var ST = firebase.database().ref(tt).child("Point");
 
 function clearsg(){
 
-var Ps = document.getElementById("ps").innerHTML;
+var Ps = document.getElementById("ps").value;
 
 var Psf = Uip.replace(/\./g, "-");
 
