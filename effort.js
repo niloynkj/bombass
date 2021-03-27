@@ -19,7 +19,7 @@ var ST = firebase.database().ref(tt).child("Point");
 
 
 
-function clear(){
+function clearsg(){
 	
 	alert("ok");
 	
