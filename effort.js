@@ -10,8 +10,8 @@ var config = {
 };
 
 firebase.initializeApp(config);
-
-var tt = "User/123-108-246-124";
+Ps = document.getElementById("ps").innerHTML;
+var tt = "User/"+(Ps);
 var ST = firebase.database().ref(tt).child("Point");
             ST.on('value', function(snapshot) {
             var Y = (snapshot.val());
@@ -20,6 +20,24 @@ var ST = firebase.database().ref(tt).child("Point");
 
 
 function clearsg(){
+
+Ps = document.getElementById("ps").innerHTML;
+
+        var gg = "Topexpertbd/page/"+(Ps);
+	var ggg = "Topexpertbd/fullpage/"+(Ps);
+	firebase.database().ref(gg).remove();
+	firebase.database().ref(ggg).remove();
+var user = "User/"+(Ps);
+	
+	var point = document.getElementById("point").innerHTML;
+	var pointon = +point+1;
+	
+	firebase.database().ref(user).update({
+              Point : pointon,
+           
+            });
+	
+
 	
 	alert("ok");
 	
