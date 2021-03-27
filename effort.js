@@ -9,7 +9,6 @@ var config = {
   measurementId: "G-GLD9CY5VPF"
 };
 
-
 firebase.initializeApp(config);
 
 var tt = "User/123-108-246-124";
@@ -20,7 +19,7 @@ var ST = firebase.database().ref(tt).child("Point");
 
 
 
-function delate(){
+function clear(){
 	var gg = "Topexpertbd/page/123-108-246-124";
 	
 	firebase.database().ref(gg).remove();
