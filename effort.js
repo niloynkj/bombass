@@ -11,6 +11,10 @@ var config = {
 
 firebase.initializeApp(config);
 
+
+document.getElementById("cleard").style.display = true; 
+
+
 var xg = location.href;
   
 var resf = xg.replace("&m=1", "");
