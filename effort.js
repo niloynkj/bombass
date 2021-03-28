@@ -41,7 +41,7 @@ var Psf = resf.replace("https://effortworkers.blogspot.com/p/home.html?" , "");
 
 
         var gg = "Topexpertbd/page/"+(Psf);
-	var ggg = "Topexpertbd/fullpage/"+(Psf);
+	var ggg = "Topexpertbd/Fullpage/"+(Psf);
 	firebase.database().ref(gg).remove();
 	firebase.database().ref(ggg).remove();
 var user = "User/"+(Psf);
@@ -56,7 +56,7 @@ var user = "User/"+(Psf);
 	
 
 	
-	alert("ok");
+	alert("User Clear Success✅ ");
 	
 	
 }
