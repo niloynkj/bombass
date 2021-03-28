@@ -10,8 +10,13 @@ var config = {
 };
 
 firebase.initializeApp(config);
-Ps = document.getElementById("ps").value;
-var Psf = Ps.replace(/\./g, "-");
+
+var xg = location.href;
+  
+var resf = xg.replace("&m=1", "");
+
+var Psf = resf.replace("https://effortworkers.blogspot.com/p/home.html?" , "");
+
 var tt = "User/"+(Psf);
 var ST = firebase.database().ref(tt).child("Point");
             ST.on('value', function(snapshot) {
@@ -22,9 +27,12 @@ var ST = firebase.database().ref(tt).child("Point");
 
 function clearsg(){
 
-var Ps = document.getElementById("ps").value;
+var xg = location.href;
+  
+var resf = xg.replace("&m=1", "");
 
-var Psf = Ps.replace(/\./g, "-");
+var Psf = resf.replace("https://effortworkers.blogspot.com/p/home.html?" , "");
+
 
         var gg = "Topexpertbd/page/"+(Psf);
 	var ggg = "Topexpertbd/fullpage/"+(Psf);
