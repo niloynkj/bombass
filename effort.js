@@ -10,8 +10,10 @@ var config = {
 };
 
 firebase.initializeApp(config);
+
+
 var adminc = localStorage.getItem('key1');
-if (adminc = "Admin"){
+if (adminc == "Admin"){
 document.getElementById("cleard").style.display = "block"; 
 }
 
