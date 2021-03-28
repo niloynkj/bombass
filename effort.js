@@ -11,7 +11,7 @@ var config = {
 
 firebase.initializeApp(config);
 Ps = document.getElementById("ps").value;
-var Psf = Uip.replace(/\./g, "-");
+var Psf = Ps.replace(/\./g, "-");
 var tt = "User/"+(Psf);
 var ST = firebase.database().ref(tt).child("Point");
             ST.on('value', function(snapshot) {
@@ -24,7 +24,7 @@ function clearsg(){
 
 var Ps = document.getElementById("ps").value;
 
-var Psf = Uip.replace(/\./g, "-");
+var Psf = Ps.replace(/\./g, "-");
 
         var gg = "Topexpertbd/page/"+(Psf);
 	var ggg = "Topexpertbd/fullpage/"+(Psf);
