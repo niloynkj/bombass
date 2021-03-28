@@ -10,10 +10,10 @@ var config = {
 };
 
 firebase.initializeApp(config);
-
-
-document.getElementById("cleard").style.display = true; 
-
+var adminc = localStorage.getItem('key1');
+if (adminc = "Admin"){
+document.getElementById("cleard").style.display = "block"; 
+}
 
 var xg = location.href;
   
