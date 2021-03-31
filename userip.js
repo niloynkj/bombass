@@ -6,7 +6,7 @@ window.onload = function () {
     };
     function DisplayIP(response) {
         document.getElementById("ip").value = (response.ip);
-        document.getElementById("gfg").innerHTML  =  "Your IP" + response.ip;
+        document.getElementById("gfg").innerHTML  =   "Your IP Address is: " + response.ip;
     }
 		
   
