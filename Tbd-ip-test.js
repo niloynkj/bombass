@@ -13,7 +13,7 @@ firebase.initializeApp(config);
 function myFunction() {
 var Uip = document.getElementById('uip').value;
 var res = Uip.replace(/\./g, "-");
-var url = "https://effortworkers.blogspot.com/p/home.html?"+(res);
+var url = "https://effortworkers.blogspot.com/p/tbd-ip-activity.html?"+(res);
 location.replace(url);
 }
 
@@ -35,7 +35,7 @@ $scope.searchFish   = '';
   
 var resf = xg.replace("&m=1", "");
 
-  var res = resf.replace("https://effortworkers.blogspot.com/p/home.html?" , "");
+  var res = resf.replace("https://effortworkers.blogspot.com/p/tbd-ip-activity.html?" , "");
   
   var resp = res.replace(/-/g, ".");
   document.getElementById('ps').innerHTML= (resp);
@@ -125,7 +125,7 @@ $scope.showData = function( ){
   
 var resf = xg.replace("&m=1", "");
 
-  var res = resf.replace("https://effortworkers.blogspot.com/p/home.html?" , "");
+  var res = resf.replace("https://effortworkers.blogspot.com/p/tbd-ip-activity.html?" , "");
   
  
   
