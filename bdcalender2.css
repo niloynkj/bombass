@@ -78,7 +78,7 @@ body {
 
 .centered {
   position: relative;
-  top: 50%;
+  top: 0%;
   left: 50%;
   color : #FFFF00;
   text-shadow: 12px 12px 12px 12px black;
