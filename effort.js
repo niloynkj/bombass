@@ -13,9 +13,6 @@ firebase.initializeApp(config);
 
 
 var adminc = localStorage.getItem('key1');
-var workerid = localStorage.getItem('workerid');
-
-document.getElementById("workerid").innerHTML = (workerid);
 
 if (adminc == "Admin"){
 document.getElementById("cleard").style.display = "block"; 
