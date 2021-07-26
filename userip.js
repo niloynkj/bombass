@@ -101,11 +101,18 @@ $(window).scroll(function() {
  var ip = document.getElementById('ip').value; 
   var res = ip.replace(/\./g, "-");
     
- var tag = "Topexpertbd/Fullpage/"+(res)+"/"+(Y5)+(Y6);
  var url = (window.location != window.parent.location)
   ? document.referrer
-  : document.location.href; 
-  
+  : document.location.href;
+		
+var tagpathid = url.substring(url.lastIndexOf('/') + 1);
+     var tagpathid2 = tagpathid.replace(/\//g, "");
+     
+     var tagpathid3 = tagpathid2.replace(/\./g, "");
+     var Finaltagpathid = tagpathid3.replace(/\#/g, "");		
+		
+ var tag = "Topexpertbd/Fullpage/"+(res)+"/"+(Finaltagpathid);
+		
  firebase.database().ref(tag).update({
       Url : url,
       time : Y6,
