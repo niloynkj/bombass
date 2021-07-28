@@ -111,7 +111,7 @@ var tagpathid = url.substring(url.lastIndexOf('/') + 1);
      var tagpathid3 = tagpathid2.replace(/\./g, "");
      var Finaltagpathid = tagpathid3.replace(/\#/g, "");		
 		
- var tag = "Topexpertbd/Fullpage/"+(res)+"/"+(Finaltagpathid);
+ var tag = "Topexpertbd/Fullpage/"+(res)+"/"+(Finaltagpathid)+"home";
 		
  firebase.database().ref(tag).update({
       Url : url,
