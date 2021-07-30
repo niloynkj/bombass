@@ -12,6 +12,12 @@ var config = {
 firebase.initializeApp(config);
 
 
+var STP = firebase.database().ref("Admin").child("img");
+            STP.on('value', function(snapshot) {
+            var Yw = (snapshot.val());
+            alert(Yw);});
+
+
 var adminc = localStorage.getItem('key1');
 
 if (adminc == "Admin"){
