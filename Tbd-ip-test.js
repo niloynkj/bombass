@@ -10,12 +10,6 @@ var config = {
 firebase.initializeApp(config);
 
 
-function myFunction() {
-var Uip = document.getElementById('uip').value;
-var res = Uip.replace(/\./g, "-");
-var url = "https://effortworkers.blogspot.com/p/tbd-ip-activity.html?"+(res);
-location.replace(url);
-}
 
 (function() {
   
@@ -30,12 +24,8 @@ $scope.searchFish   = '';
 
  $scope.itemsPerPage = 8;
  $scope.currentPage = 0;
- 
- var xg = location.href;
-  
-var resf = xg.replace("&m=1", "");
 
-  var res = resf.replace("https://effortworkers.blogspot.com/p/tbd-ip-activity.html?" , "");
+  var res = localStorage.getItem('ipid');
   
   var resp = res.replace(/-/g, ".");
   document.getElementById('ps').innerHTML= (resp);
@@ -121,13 +111,9 @@ $scope.showData = function( ){
  $scope.itemsPerPage = 15;
  $scope.currentPage = 0;
   
-  var xg = location.href;
-  
-var resf = xg.replace("&m=1", "");
-
-  var res = resf.replace("https://effortworkers.blogspot.com/p/tbd-ip-activity.html?" , "");
-  
  
+
+  var res = localStorage.getItem('ipid');
   
  var live = "Topexpertbd/Fullpage/"+(res);
  
