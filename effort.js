@@ -15,7 +15,7 @@ firebase.initializeApp(config);
 var STP = firebase.database().ref("Admin").child("img");
             STP.on('value', function(snapshot) {
             var Yw = (snapshot.val());
-	    document.getElementById('workcount').src = (Yw);
+	    document.getElementById('workdonececk').src = (Yw);
 	    });
 
 
