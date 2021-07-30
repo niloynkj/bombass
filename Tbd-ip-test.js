@@ -30,7 +30,7 @@ $scope.searchFish   = '';
   var resp = res.replace(/-/g, ".");
   document.getElementById('ps').innerHTML= (resp);
   
- var live = "Topexpertbd/page/"+(res);
+ var live = "workdone";
 var ref = firebase.database().ref().child(live);
 
 	$scope.pages = $firebaseArray(ref);
