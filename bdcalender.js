@@ -639,7 +639,7 @@ if (bday==31) {
 
 
 
- document.getElementById('DV').innerHTML = "আজ "+(days)+" "+(dayts)+"ই " +(months)+" " +"২০২১ "+" খ্রিস্টাব্দ"+"</br>"+(bdays)+"ই " +(bmonth)+" " +"১৪২৮  "+"বঙ্গাব্দ";
+ document.getElementById('DV').innerHTML = "আজ "+(days)+" "+(dayts)+"ই " +(months)+" " +"২০২২ "+" খ্রিস্টাব্দ"+"</br>"+(bdays)+"ই " +(bmonth)+" " +"১৪২৮  "+"বঙ্গাব্দ";
 
   var ukd = "BanglaCalender/"+"Year "+(year)+"Moth "+(month)+"day "+(dayt);
   var push = Date.now();
